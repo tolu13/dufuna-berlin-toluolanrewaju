@@ -143,12 +143,12 @@ public class LekkiProperty {
         if (this == obj) return true; // same object in memory
         if (obj == null || getClass() != obj.getClass()) return false; // check type
         LekkiProperty other = (LekkiProperty) obj;
-        return this.propertyId == other.propertyId; // compare by ID
+        return this.propertyId.equals(other.propertyId); // compare by ID
     }
 
     @Override
     public int hashCode() {
-        return propertyId != null ? propertyId.hashCode() : 0;// simple hash based on ID
+        return  propertyId.hashCode();// simple hash based on ID
     }
 
 
