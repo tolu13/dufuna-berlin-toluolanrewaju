@@ -93,7 +93,7 @@ public class LekkiProperty {
         this.propertyAddress = propertyAddress;
     }
 
-    public void setPropertyType(String propertType) {
+    public void setPropertyType(String propertyType) {
         this.propertyType = propertyType;
     }
 
