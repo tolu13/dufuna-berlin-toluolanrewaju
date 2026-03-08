@@ -25,5 +25,7 @@ public class MockLekkiPropertyApp {
         // 5️⃣ Print both properties
         System.out.println("Created Property: " + property);
         System.out.println("Retrieved Property: " + retrieved);
+
+
     }
 }
