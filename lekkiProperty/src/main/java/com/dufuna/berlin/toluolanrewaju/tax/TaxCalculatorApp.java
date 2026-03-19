@@ -1,7 +1,6 @@
 package com.dufuna.berlin.toluolanrewaju.tax;
 
 import com.dufuna.berlin.toluolanrewaju.tax.model.TaxBracket;
-import com.dufuna.berlin.toluolanrewaju.tax.repository.TaxBracketImpl;
 import com.dufuna.berlin.toluolanrewaju.tax.repository.TaxBracketRepository;
 import com.dufuna.berlin.toluolanrewaju.tax.service.TaxCalculatorService;
 import org.springframework.boot.CommandLineRunner;
@@ -23,7 +22,7 @@ public class TaxCalculatorApp {
       return args -> {
 
 
-          /* 2️⃣ Store tax brackets (this is your "Excel table")*/
+          /*  Store tax brackets (this is your "Excel table")*/
           repository.save(new TaxBracket(0, 30000, 0.05));
           repository.save(new TaxBracket(30000, 100000, 0.1));
           repository.save(new TaxBracket(100000, 250000, 0.15));
