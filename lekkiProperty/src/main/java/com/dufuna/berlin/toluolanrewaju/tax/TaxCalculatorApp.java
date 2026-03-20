@@ -28,18 +28,6 @@ public class TaxCalculatorApp {
           repository.save(new TaxBracket(100000, 250000, 0.15));
           repository.save(new TaxBracket(250000, Double.MAX_VALUE, 0.2));
 
-
-          /* 4️⃣ Input income*/
-          Scanner scanner = new Scanner(System.in);
-          System.out.println("please enter your income : ");
-          double income = scanner.nextDouble();
-          /*  Calculate tax */
-          double tax = service.calculateTax(income);
-
-          /* Print result */
-          System.out.println("Income: " + income);
-          System.out.println("Tax to pay: " + tax);
-
       };
   }
 }
